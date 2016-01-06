@@ -1,0 +1,18 @@
+{
+    "name": "deviantintegral/notice-test",
+    "require": {
+        "phpunit/phpunit": "^5.1"
+    },
+    "authors": [
+        {
+            "name": "Andrew Berry",
+            "email": "deviantintegral@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "cat tests/NoticeTest.php",
+            "vendor/bin/phpunit tests"
+        ]
+    }
+}
